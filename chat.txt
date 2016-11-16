@@ -1,0 +1,7 @@
+
+index is the server; main is client;
+main use $ functions to moniter activity such as typing, log in.. from browser;
+then main will emit event; and index.js will capture them and then index.js will emit event (mainly broadcasting.., because the client cannot broadcast to others); and then client or main will capture them and updating the browser content i.e. html page
+
+1).how it initiate the chat: by starting with log in page; done by main.js
+2). then bi-direction communication between client (main.js) and server (index.js) by using socket.on('', function()) to moniter event sent by each other.
